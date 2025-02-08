@@ -44,6 +44,13 @@ button:focus {
   outline: none;
 }
 
+.preloader {
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  inset: 0;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -74,13 +81,14 @@ button:focus {
 .content__details {
   inline-size: 100%;
   block-size: 100%;
+  position: relative;
 }
 
 .content__list {
   max-block-size: 298px;
-  overflow: auto;
-  position: relative;
-
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 .content__list-item:not(:last-child) {
@@ -229,11 +237,6 @@ button:focus {
 }
 
 .button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
   cursor: pointer;
   font-weight: 700;
   font-size: 18px;
@@ -256,6 +259,10 @@ button:focus {
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
+}
+
+.more-button {
+  margin-block-start: 30px;
 }
 
 .search-form__submit-button {
