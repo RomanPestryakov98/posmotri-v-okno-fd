@@ -44,13 +44,6 @@ button:focus {
   outline: none;
 }
 
-.preloader {
-  position: absolute;
-  inline-size: 100%;
-  block-size: 100%;
-  inset: 0;
-}
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
